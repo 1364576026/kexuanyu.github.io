@@ -1,0 +1,916 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+  <meta name="google-site-verification" content="DEmURQD192npdEWCmIgWuzAI0KbXuzhufdQl5nLRfSo" />
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
+
+
+    <meta name="description" content="念念不忘 必有回响" />
+
+
+
+  <meta name="keywords" content="Blog,GitHub Pages,Next," />
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Tyrone" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+
+<meta name="description" content="前言作为一名技术控,有必要搭建一个属于自己的独立博客,用来记录学习过程中的点点滴滴,同世界一起见证自己的成长 .">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GitHub Pages和Hexo搭建无限流量之静态独立Blog">
+<meta property="og:url" content="http://yoursite.com/2015/08/17/Github-Pages-for-Hexo-Set-up-steps/index.html">
+<meta property="og:site_name" content="Tyrone">
+<meta property="og:description" content="前言作为一名技术控,有必要搭建一个属于自己的独立博客,用来记录学习过程中的点点滴滴,同世界一起见证自己的成长 .">
+<meta property="og:image" content="https://dn-rulegod.qbox.me/github.png">
+<meta property="og:image" content="https://dn-rulegod.qbox.me/Gitbash.png">
+<meta property="og:image" content="https://dn-rulegod.qbox.me/SSH-KEY.png">
+<meta property="og:image" content="https://dn-rulegod.qbox.me/SSH-KEY-1.png">
+<meta property="og:image" content="https://dn-rulegod.qbox.me/github-2.png">
+<meta property="og:image" content="https://dn-rulegod.qbox.me/yuming.png">
+<meta property="og:image" content="https://dn-rulegod.qbox.me/godaddy-3.png">
+<meta property="og:image" content="https://dn-rulegod.qbox.me/godaddy-01.png">
+<meta property="og:image" content="https://dn-rulegod.qbox.me/godaddy-03.png">
+<meta property="og:image" content="https://dn-rulegod.qbox.me/godaddy-04.png">
+<meta property="og:image" content="https://dn-rulegod.qbox.me/godaddy-06.png">
+<meta property="og:updated_time" content="2015-08-26T03:37:58.613Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GitHub Pages和Hexo搭建无限流量之静态独立Blog">
+<meta name="twitter:description" content="前言作为一名技术控,有必要搭建一个属于自己的独立博客,用来记录学习过程中的点点滴滴,同世界一起见证自己的成长 .">
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post'
+  };
+</script>
+
+  <title> GitHub Pages和Hexo搭建无限流量之静态独立Blog | Tyrone </title>
+</head>
+<script type='text/javascript'>window._ty_rum||function(){function sf(t){switch(typeof t){case"object":if(!t)return"null";if(t instanceof Array){for(var r="[",e=0;e<t.length;e++)r+=(e>0?",":"")+sf(t[e]);return r+"]"}var r="{",e=0;for(var n in t)"function"!=typeof t[n]&&(r+=(e>0?",":"")+sf(n)+":"+sf(t[n]),e++);return r+"}";case"string":return'"'+t.replace(/([\"\\])/g,"\\$1")+'"';case"number":return t.toString();case"boolean":return t?"true":"false";case"function":return"[function]";case"undefined":default:return"undefined"}}function now(){return Date.now?Date.now():(new Date).valueOf()}function enc(t){return wd.encodeURIComponent?encodeURIComponent(t):t}function hrs(t){return function(){}}function odl(){mc.ied()}function och(){"complete"===dc.readyState&&mc.ied()}function owl(t){function r(){mc.sd()}return ty_rum.load_time?!0:(mc.ied(),ty_rum.load_time=now(),void(9===t?r():setTimeout(r,0)))}function owu(){ul||owl(9),ul=1}function ot(){mc.touch||(mc.touch=now())}function oe(t){var r=arguments,e="unknown",n=[now()];if(0!=r.length){if("string"==typeof t){var a=r.length<4?r.length:4;n[1]=r[0],a>2&&(n[2]=r[2],n[3]=0,n[4]=r[1]),a>3&&r[3]&&(n[3]=r[3])}else if(t instanceof Event&&(n[1]=t.message||(t.error&&t.error.constructor.name)+(t.error&&t.error.message)||"",n[2]=t.lineno?t.lineno:0,n[3]=t.colno?t.colno:0,n[4]=t.filename||t.error&&t.error.fileName||t.target&&t.target.baseURI||"",n[4]==dc.URL&&(n[4]="#"),n[1]===e&&n[4]===e))return;mc.e.push(n)}}function thiscall(o,m,a){for(var f="o."+m+"(",i=0;i<a.length;i++)f+=(i>0?",":"")+"a["+i+"]";return f+=");",eval(f)}function wp_open(t){return function(){var r=arguments,e=this;if(!e._ty_wrap){var n=ut.ag.apply(e,r);e._ty_rum={method:n[0],url:n[1],start:now()}}try{return t.apply(e,r)}catch(a){return e.open=t,thiscall(e,"open",r)}}}function sz(t){return"string"==typeof t?t.length:ArrayBuffer&&t instanceof ArrayBuffer?t.byteLength:Blob&&t instanceof Blob?t.size:t.length?t.length:0}function wp_send(t){return function(){function r(t){var r,e,a=i._ty_rum;if(a){if(4!==a.readyState&&(a.end=now()),a.s=i.status,a.res=sz(i.responseText),a.readyState=i.readyState,a.cb_time=s,r=[a.method+" "+a.url,a.s>0?a.end-a.start:0,s,a.s,a.s>0?0:t,a.res,a.req],a.r&&(e=n(i),e&&(e=e.xData)&&(r.push(e.id),r.push(e.action),r.push(e.time&&e.time.duration),r.push(e.time&&e.time.qu))),ty_rum.aa.push(r),ty_rum.server.custom_urls&&ty_rum.server.custom_urls.length&&!mc.ct){if(!ty_rum.pattern){ty_rum.pattern=[];for(var o=0;o<ty_rum.server.custom_urls.length;o++)ty_rum.pattern.push(new RegExp(ty_rum.server.custom_urls[o]))}for(var o=0;o<ty_rum.pattern.length;o++)if(a.url.match(ty_rum.pattern[o])){mc.ct=a.end+s;break}}mc.sa(),i._ty_rum=null}}function e(){4==i.readyState&&r(0)}function n(t){var r;if(t.getResponseHeader){var e=ut.pj(t.getResponseHeader("X-Tingyun-Tx-Data"));e&&e.r&&t._ty_rum&&e.r+""==t._ty_rum.r+""&&(r={name:t._ty_rum.url,xData:e},pf&&wd._ty_rum.c_ra.push(r))}return r}function a(t){return function(){var r;4==i.readyState&&i._ty_rum&&(i._ty_rum.end=r=now(),i._ty_rum.readyState=4);var n=t.apply(this,arguments);return 4==i.readyState&&(s=now()-r),e(),n}}function o(t){return function(){var e=i._ty_rum;return e?"progress"==t?!0:("abort"==t?r(905):"loadstart"==t?e.start=now():"error"==t?r(990):"timeout"==t&&r(903),!0):!0}}function u(t,r){r instanceof Array||(r=[r]);for(var e=0;e<r.length;e++){var n=r[e];ut.sh(t,n,o(n),!1)}}if(!this._ty_wrap){this._ty_rum.start=now(),this._ty_rum.req=arguments[0]?sz(arguments[0]):0;var i=this,s=0,c=ut.wp(!1,this,"onreadystatechange",a);c||ut.sh(this,"readystatechange",e,!1),u(this,["error","progress","abort","load","loadstart","loadend","timeout"]),c||setTimeout(function(){ut.wp(!1,i,"onreadystatechange",a)},0)}var m=function(){function t(t){var r={},e=/^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?/.exec(t);return e&&(r.protocol=e[1]?e[1]+":":"http:",r.hostname=e[3],r.port=e[4]||""),r}return function(r){var e=location;if(r=ut.trim(r)){if(r=r.toLowerCase(),r.startsWith("//")&&(r=e.protocol+r),!r.startsWith("http"))return!0;var n=t(r),a=n.protocol===e.protocol&&n.hostname===e.hostname;return a&&(a=n.port===e.port?!0:!e.port&&("http:"===e.protocol&&"80"===n.port||"https:"===e.protocol&&"443"===n.port)),a}return!1}}(),d=arguments;try{try{var f=ty_rum.server;f&&f.id&&this._ty_rum&&m(this._ty_rum.url)&&(this._ty_rum.r=(new Date).getTime()%1e8,this.setRequestHeader&&this.setRequestHeader("X-Tingyun-Id",f.id+";r="+this._ty_rum.r))}catch(l){}return t.apply(this,d)}catch(l){return this.send=t,thiscall(this,"send",d)}}}var wd=window,xr=wd.XMLHttpRequest,dc=document,ty_rum=wd._ty_rum={st:now(),ra:[],c_ra:[],aa:[],snd_du:function(){return this.server.adu?1e3*this.server.adu:1e4},cc:function(){return this.server.ac?this.server.ac:10}};ty_rum.server = {id:'ygSkiHrFoRM',beacon:'beacon.tingyun.com',beacon_err:'beacon-err.tingyun.com',key:'m8yziyDyrK4',trace_threshold:40000,custom_urls:[],sr:1.0};if(ty_rum.server&&!(ty_rum.server.sr&&Math.random()>=ty_rum.server.sr)){var trim=String.prototype.trim;String.prototype.startsWith||(String.prototype.startsWith=function(t,r){return r=r||0,this.indexOf(t,r)===r});var ut={wp:function(t,r,e,n,a){var o;try{o=r[e]}catch(u){if(!t)return!1}if(!o&&!t)return!1;if(o&&o._ty_wrap)return!1;try{r[e]=n(o,a)}catch(u){return!1}return r[e]._ty_wrap=[o],!0},mu:function(t,r){var e=arguments,n=dc.URL.match(/^([a-zA-Z]+:)/)[0]+"//"+t+"/"+r+"?av=v1.0.0&v=1.3.0&key="+enc(ty_rum.server.key)+"&ref="+enc(dc.URL)+"&rand="+now();if(e.length>2){var a=e[2];for(var o in a)n+="&"+o+"="+a[o]}return n},gt:function(t,r){function e(){r&&r.apply(this,arguments),n.parentNode&&n.parentNode.removeChild(n)}var n=dc.createElement("script");n.type="text/javascript",n.src=t,ut.sh(n,"readystatechange",function(){("loaded"==n.readyState||4==n.readyState)&&e(null,n.innerHTML)},!1),ut.sh(n,"load",function(){return e(null,n.innerHTML),!0},!1),ut.sh(n,"error",function(){return e("error",n.innerHTML),!0},!1);var a=dc.getElementsByTagName("script")[0];return a.parentNode.insertBefore(n,a)?n:void 0},fpt:function(t,r,e){function n(t,r,e){var n=dc.createElement(t);try{for(var a in r)n[a]=r[a]}catch(o){var u="<"+t;for(var a in r)u+=" "+a+'="'+r[a]+'"';u+=">",e||(u+="</"+t+">"),n=dc.createElement(u)}return n}var a=n("div",{style:"display:none"},!1),o=n("iframe",{name:"_ty_rum_frm",width:0,height:0,style:"display:none"},!1),u=n("form",{style:"display:none",action:t,enctype:"application/x-www-form-urlencoded",method:"post",target:"_ty_rum_frm"},!1),i=n("input",{name:"data",type:"hidden"},!0);return i.value=r,u.appendChild(i),a.appendChild(o),a.appendChild(u),dc.body.appendChild(a),u.submit(),o.onreadystatechange=function(){("complete"===o.readyState||4===o.readyState)&&(e(null,o.innerHTML),dc.body.removeChild(a))},!0},pt:function(t,r,e,n){if(navigator&&navigator.sendBeacon)return navigator.sendBeacon(t,r);if(ut.ie)return ut.fpt(t,r,n);var a;if(wd.XDomainRequest)return a=new XDomainRequest,a.open("POST",t),a.onload=function(){n(null,a.responseText)},ut.sh(a,"load",function(){n(null,a.responseText)},!1),ut.sh(a,"error",function(){n("POST("+t+")error")},!1),ut.wp(!0,a,"onerror",function(t){return function(){return n&&n("post error",a.responseText),!0}}),a.send(r),!0;if(!xr)return!1;a=new xr,a.overrideMimeType&&a.overrideMimeType("text/html");try{a._ty_wrap=1}catch(o){}var u=0;a.onreadystatechange=function(){4==a.readyState&&200==a.status&&(0==u&&n(null,a.responseText),u++)},a.onerror&&ut.wp(!0,a,"onerror",function(t){return function(){return n("post error",a.responseText),"function"==typeof t?t.apply(this,arguments):!0}});try{a.open("POST",t,!0)}catch(o){return ut.fpt(t,r,n)}for(var i in e)a.setRequestHeader(i,e[i]);return a.send(r),!0},sh:function(t,r,e,n){return t.addEventListener?t.addEventListener(r,e,n):t.attachEvent?t.attachEvent("on"+r,e):!1},ag:function(){for(var t=[],r=0;r<arguments.length;r++)t.push(arguments[r]);return t},pj:function(t){if(t&&"string"==typeof t){var r=window.JSON?window.JSON.parse:function(t){return new Function("return "+t)()};return r(t)}return null},trim:trim?function(t){return null==t?"":trim.call(t)}:function(t){return null==t?"":t.toString().replace(/^\s+/,"").replace(/\s+$/,"")}},pf=wd.performance?wd.performance:wd.Performance;pf&&(ut.sh(pf,"resourcetimingbufferfull",function(){var t=pf.getEntriesByType("resource");t&&(ty_rum.ra=ty_rum.ra.concat(t),pf.clearResourceTimings())},!1),ut.sh(pf,"webkitresourcetimingbufferfull",function(){var t=pf.getEntriesByType("resource");t&&(ty_rum.ra=ty_rum.ra.concat(t),pf.webkitClearResourceTimings())},!1));for(var mc=ty_rum.mc={rd:function(){return ty_rum.load_time},ied:function(){function t(){mc.sa()}ty_rum.end_time||(ty_rum.end_time=now(),mc._h=setInterval(t,2e3))},sd:function(){function t(){function t(t){return e[t]>0?e[t]-n:0}var r={};if(pf&&pf.timing){var e=pf.timing;n=e.navigationStart;var a=t("domainLookupStart"),o=t("domainLookupEnd"),u=t("redirectStart"),i=t("redirectEnd"),s=t("connectStart"),c=t("connectEnd");r={f:t("fetchStart"),qs:t("requestStart"),rs:t("responseStart"),re:t("responseEnd"),os:t("domContentLoadedEventStart"),oe:t("domContentLoadedEventEnd"),oi:t("domInteractive"),oc:t("domComplete"),ls:t("loadEventStart"),le:t("loadEventEnd")},c-s>0&&(r.cs=s,r.ce=c),o-a>0&&(r.ds=a,r.de=o),(i-u>0||i>0)&&(r.es=u,r.ee=i),0==r.le&&(r.ue=ty_rum.load_time-n);var m;if(e.msFirstPaint)m=e.msFirstPaint;else if(wd.chrome&&chrome.loadTimes){var d=chrome.loadTimes();d&&d.firstPaintTime&&(m=1e3*d.firstPaintTime)}else ty_rum.fp&&(m=ty_rum.fp);m&&(r.fp=Math.round(m-n)),e.secureConnectionStart&&(r.sl=t("secureConnectionStart"))}else r={t:n,os:ty_rum.end_time-n,ls:ty_rum.load_time-n};r.je=mc.e.length,mc.ct&&(r.ct=mc.ct-n),mc.touch&&(r.fi=mc.touch-n);var f=ty_rum.agent;return f&&(r.id=enc(f.id),r.a=f.a,r.q=f.q,r.tid=enc(f.tid),r.n=enc(f.n)),r}function r(t){var r=window._ty_rum.c_ra;if(t)for(var e=r.length-1;e>=0;e--)if(t.indexOf(r[e].name)>-1)return r[e].xData;return null}function e(t){function e(t){return s[t]>0?s[t]:0}if(t<ty_rum.server.trace_threshold)return null;if(pf&&pf.getEntriesByType){var a={tr:!0,tt:enc(dc.title),charset:dc.characterSet},o=ty_rum.ra,u=pf.getEntriesByType("resource");u&&(o=o.concat(u),pf.webkitClearResourceTimings&&pf.webkitClearResourceTimings(),pf.clearResourceTimings&&pf.clearResourceTimings()),a.res=[];for(var i=0;i<o.length;i++){var s=o[i],c={o:e("startTime"),rt:s.initiatorType,n:s.name,f:e("fetchStart"),ds:e("domainLookupStart"),de:e("domainLookupEnd"),cs:e("connectStart"),ce:e("connectEnd"),sl:e("secureConnectionStart"),qs:e("requestStart"),rs:e("responseStart"),re:e("responseEnd")},m=r(s.name);m&&(c.aid=m.id,c.atd=m.trId,c.an=m.action,c.aq=m.time&&m.time.qu,c.as=m.time&&m.time.duration),a.res.push(c)}if(mc.e.length){a.err=[];for(var i=0,d=mc.e;i<mc.e.length;i++)a.err.push({o:Math.round(d[i][0]-n),e:d[i][1],l:d[i][2],c:d[i][3],r:d[i][4]})}return a}return null}if(mc.sended)return!1;if(!mc.rd())return!1;var n=ty_rum.st,a={},o={};try{o=t(),a=e(o.ls>0?o.ls:ty_rum.load_time-n)}catch(u){}a=a?sf(a):"";var i=ut.mu(ty_rum.server.beacon,"pf",o);if(0!=a.length&&ut.pt(i,a,{},hrs("POST"))||ut.gt(i),mc.e.length>0){var u=mc.e[0];ut.gt(ut.mu(ty_rum.server.beacon_err,"err",{data:enc(sf([u[1],u[2],u[3],"#"==u[4]?dc.URL:u[4],mc.e.length]))}),hrs("GET err"))}return mc.sended=!0,mc.sa(1),!0},sa:function(t){(mc.rd()||t)&&(t||(t=!mc._last_send||now()-mc._last_send>ty_rum.snd_du()||ty_rum.aa.length>=ty_rum.cc()),ty_rum.aa.length>0&&t&&(mc._last_send=now(),ut.pt(ut.mu(ty_rum.server.beacon,"xhr"),sf({xhr:ty_rum.aa}),{},hrs("POST")),ty_rum.aa=[]))},e:[]},ul=null,l=[["load",owl],["beforeunload",owu],["pagehide",owu],["unload",owu],["error",oe]],i=0;i<l.length;i++)ut.sh(wd,l[i][0],l[i][1],!1);l=[["scroll",ot],["keypress",ot],["click",ot],["DOMContentLoaded",odl],["readystatechange",och]];for(var i=0;i<l.length;i++)ut.sh(dc,l[i][0],l[i][1],!1);if(ut.wp(!1,wd,"requestAnimationFrame",function(t){return function(){return ty_rum.fp=now(),wd.requestAnimationFrame=t,t.apply(this,arguments)}}),xr)if(xr.prototype)ut.wp(!1,xr.prototype,"open",wp_open),ut.wp(!1,xr.prototype,"send",wp_send);else{ut.ie=7;var x=xr;wd.XMLHttpRequest=function(){var t=new x;return ut.wp(!1,t,"open",wp_open),ut.wp(!1,t,"send",wp_send),t}}else wd.ActiveXObject&&(ut.ie=6);}}();</script>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-65933438-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?68876b5caaa264d61c774864815e75e3";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand" rel="start">
+      <span class="logo">
+        <i class="icon-next-logo"></i>
+      </span>
+      <span class="site-title">Tyrone</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu menu-left">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon icon-next-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            <i class="menu-item-icon icon-next-categories"></i> <br />
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            <i class="menu-item-icon icon-next-archives"></i> <br />
+            时间线
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            <i class="menu-item-icon icon-next-tags"></i> <br />
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <form class="site-search-form">
+    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+  </form>
+
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'TgBbCxaJhYJWTb-vqsan','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content"> 
+
+  <div id="posts" class="posts-expand">
+    
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              GitHub Pages和Hexo搭建无限流量之静态独立Blog
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-08-17T15:53:07+08:00" content="2015-08-17">
+            2015-08-17
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/Conding/" itemprop="url" rel="index">
+                  <span itemprop="name">Conding</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2015/08/17/Github-Pages-for-Hexo-Set-up-steps/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/08/17/Github-Pages-for-Hexo-Set-up-steps/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p><img src="https://dn-rulegod.qbox.me/github.png" alt="github"></p>
+<h1 id="前言">前言</h1><p>作为一名技术控,有必要搭建一个属于自己的独立博客,用来记录学习过程中的点点滴滴,同世界一起见证自己的成长 .</p>
+<a id="more"></a>
+<h2 id="为什么选择Github_Pages搭建独立博客呢_???">为什么选择Github Pages搭建独立博客呢 ???</h2><ol>
+<li><a href="https://zh.wikipedia.org/wiki/GitHub" target="_blank" rel="external">Github</a>号称”全球最大的同志交友网站”,截至2015年,拥有900万注册用户和2110 万代码仓库,事实上已经成为全球最大的代码存放网站,其中不乏大牛级人物 .</li>
+<li>Github完美支持<a href="https://zh.wikipedia.org/wiki/Markdown#Markdown.E7.9A.84.E7.94.A8.E6.88.B7" target="_blank" rel="external">Markdown</a>标记语法.让我们更专注于写字本身而非排版样式 .</li>
+<li>拥有300M空间和无限流量的Github. Page足以满足个人博客的需求 .独立的东西才是属于自己的 .</li>
+<li>顺便了解Github的工作原理,具备最好的团队协作流程 .</li>
+<li>如果Github不幸被墙,分分钟转移国内Gitcafe .</li>
+<li>支持独立域名的绑定 .</li>
+<li>Github是一种趋势 .<br><strong>以上链接需科学上网</strong></li>
+</ol>
+<h2 id="准备工作">准备工作</h2><p>一次下载安装以下软件</p>
+<ol>
+<li><a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a></li>
+<li><a href="http://git-scm.com/download" target="_blank" rel="external">Git</a></li>
+</ol>
+<p><strong>注意: Nodes.js默认安装完成后需添加Path环境变量，使npm命令生效</strong></p>
+<blockquote>
+<p>;C:\Program Files\nodejs\node_modules\npm;</p>
+</blockquote>
+<p><strong>如果Node.js非默认安装路径(D:\Code\Node),则变量值如下</strong></p>
+<blockquote>
+<p>;C:\Program Files\nodejs\node_modules\npm;D:\Code\Node</p>
+</blockquote>
+<h2 id="如何打开Git???">如何打开Git???</h2><ol>
+<li>开始菜单-所有程序-Git<br><img src="https://dn-rulegod.qbox.me/Gitbash.png" alt="Git"></li>
+</ol>
+<h2 id="注册GitHub">注册GitHub</h2><p>访问:<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a></p>
+<p>注册过程比较简单,无需多言</p>
+<p><em>username和邮箱，其中邮箱十分重要，GitHub上很多通知都是通过邮箱</em></p>
+<h1 id="为什么要配置SSH_Keys_???">为什么要配置SSH Keys ???</h1><p>让本地Git项目与远程的github建立联系</p>
+<h2 id="检查SSH_keys的设置">检查SSH keys的设置</h2><p>首先我们需要检查你电脑上现有的ssh key：</p>
+<blockquote>
+<p>$ cd ~/. ssh 检查本机的ssh密钥</p>
+</blockquote>
+<p>如果提示：No such file or directory 说明你是第一次使用git .</p>
+<p>生成新的SSH Key：</p>
+<blockquote>
+<p>$ ssh-keygen -t rsa -C “邮件地址@youremail.com”<br>Generating public/private rsa key pair .<br>Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa): &lt;回车就好&gt;</p>
+</blockquote>
+<p><strong>注意1: 此处的邮箱地址，你可以输入自己的邮箱地址；注意2: 此处的 -C 的是大写的 C</strong></p>
+<p>然后系统会要你输入密码：</p>
+<blockquote>
+<p>Enter passphrase (empty for no passphrase):&lt;输入密码&gt;<br>Enter same passphrase again:&lt;再次输入密码&gt;</p>
+</blockquote>
+<p><em>在提交项目时需使用该密码，如果为空则提交项目时不需要输入 .这样做的好处是防止别人往你的项目里提交内容</em></p>
+<p><strong>注意：输入密码的时候没有*字样的，直接输入就行.</strong></p>
+<p>最后看到这样的界面，就成功设置ssh key了：<br><img src="https://dn-rulegod.qbox.me/SSH-KEY.png" alt="SSH"></p>
+<h2 id="添加SSH_Key到GitHub">添加SSH Key到GitHub</h2><p>本机设置SSH Key之后，需要添加到GitHub上，以完成SSH链接的设置</p>
+<ol>
+<li>打开本地C:\Users\Administrator\.ssh\id_rsa.pub文件. 此文件内容便是密钥. 如果看不到这个文件，则需要设置显示隐藏文件以及显示已知文件的扩展名 .然后用Sublime打开该文件,然后复制里面的内容.</li>
+<li>登陆github. 点击右上角的 Settings—&gt; SSH Keys —&gt; Add SSH Key .</li>
+<li>将密钥复制到里面（key文本框中）， 点击 Add key 就ok了 .<br><img src="https://dn-rulegod.qbox.me/SSH-KEY-1.png" alt="SSH"></li>
+</ol>
+<h2 id="测试">测试</h2><p>输入下面的命令，查看设置是否成功:</p>
+<blockquote>
+<p>$ ssh -T git@github.com</p>
+</blockquote>
+<p>如果是下面的反馈：</p>
+<blockquote>
+<p>Enter passphrase for key ‘/c/Users/Divergent/.ssh/id_rsa’: (键入密码)</p>
+</blockquote>
+<p>没关系，输入yes好了，然后会看到：</p>
+<blockquote>
+<p>Hi RuleGod! You’ve successfully authenticated, but GitHub does not provide shell access.</p>
+</blockquote>
+<h2 id="设置用户信息">设置用户信息</h2><p>现在可以通过SSH连接到GitHub，然而还需要完善一些个人信息.</p>
+<p>Git会根据用户的名字和邮箱来记录提交 . GitHub也是用这些信息来判断权限大小，输入以下代码进行个人信息的设置,名称和邮箱替换成你自己的.</p>
+<blockquote>
+<p>$ git config –global user.name “username”     </p>
+<p>$ git config –global user.email  “user_name@yourname.com”</p>
+</blockquote>
+<h2 id="SSH_Key配置成功">SSH Key配置成功</h2><p>本机已成功连接到github .</p>
+<p>若有问题，请重新设置.常见错误请参考：</p>
+<p><a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank" rel="external">GitHub Help - Generating SSH Keys</a></p>
+<p><a href="https://help.github.com/articles/error-permission-denied-publickey/" target="_blank" rel="external">GitHub Help - Error Permission denied (publickey)</a></p>
+<h1 id="利用GitHub_Pages搭建博客">利用GitHub Pages搭建博客</h1><p>与GitHub建立好链接之后，就可以方便的使用它提供的Pages服务，GitHub Pages分两种，一种是你的GitHub用户名建立的username.github.io这样的用户&amp;组织页（站），另一种是依附项目的pages .</p>
+<p>想建立个人博客是用的第一种，形如RuleGod.github.io这样的可访问的站，每个用户名下面只能建立一个 .</p>
+<h2 id="github上建立仓库">github上建立仓库</h2><p>登录GitHub系统，在github首页，点击页面右下角<a href="https://github.com/new" target="_blank" rel="external">New Repository</a><br><img src="https://dn-rulegod.qbox.me/github-2.png" alt="GitHub"></p>
+<p>填写项目信息：</p>
+<blockquote>
+<p>Repository name：username.github.io</p>
+</blockquote>
+<p><em>注：Github Pages的Repository名字是特定的</em><br><strong>示例:Github账号是RuleGod，则Github Pages Repository名字就是RuleGod.github.io</strong></p>
+<p>点击 Create Repository 完成创建</p>
+<h1 id="用Hexo克隆主题">用Hexo克隆主题</h1><h2 id="Hexo介绍">Hexo介绍</h2><p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>的作者是<a href="https://github.com/hexojs/hexo" target="_blank" rel="external">tommy351</a>，据官方介绍，<a href="http://hexo.io/docs/index.html" target="_blank" rel="external">Hexo</a>是一款简单、快速、强大的博客发布工具，支持Markdown语法.</p>
+<h2 id="安装Hexo">安装Hexo</h2><p>打开 git ,键入以下代码</p>
+<blockquote>
+<p> npm install -g hexo</p>
+</blockquote>
+<h2 id="部署Hexo">部署Hexo</h2><p>在电脑上建立一个名叫 Hexo 的文件夹，然后在此文件夹上右键打开Git Bash ,键入以下代码</p>
+<blockquote>
+<p>$ hexo init</p>
+</blockquote>
+<p>Hexo随后会自动在目标文件夹建立网站所需要的所有文件 . </p>
+<p>现在我们已经搭建起本地的hexo博客了，执行以下命令(在H:\hexo)，然后到浏览器输入localhost:4000看看 .</p>
+<blockquote>
+<p>$ hexo g  #生成</p>
+<p>$ hexo s #启动本地服务，进行文章预览调试</p>
+</blockquote>
+<h2 id="部署到Github前准备工作">部署到Github前准备工作</h2><p>修改站点目录下的_config</p>
+<blockquote>
+<p>deploy:<br>  type: git<br>  repository: git@github.com:AlanCheen/alancheen.github.io.git /SSH链接<br>  branch: master<br>  message:</p>
+</blockquote>
+<p><em>新教程中type: git</em></p>
+<h2 id="安装git插件_hexo-deployer-git">安装git插件 hexo-deployer-git</h2><blockquote>
+<p>$ npm install hexo-deployer-git –save</p>
+</blockquote>
+<h2 id="开始部署">开始部署</h2><blockquote>
+<p>$ hexo d</p>
+</blockquote>
+<p><em>如果一切顺利,你就能看到自己的博客</em></p>
+<h2 id="复制jacman主题">复制jacman主题</h2><p>博客根目录下执行如下命令</p>
+<blockquote>
+<p>$ git clone <a href="https://github.com/wuchong/jacman.git" target="_blank" rel="external">https://github.com/wuchong/jacman.git</a> themes/jacman</p>
+</blockquote>
+<p><em>注: Jacman 需要安装 Hexo 2.7 及以上版本，请先升级 Hexo 程序，再启用此主题</em></p>
+<h2 id="启用主题">启用主题</h2><p>修改站点目录下的_config.yml配置文件中的 theme 属性，将将其修改为jacman . 同时建议修改stylus属性中的compress值为true，自动压缩 CSS 文件，hexo 默认配置中不包含这一项，建议开启 .</p>
+<p>示例: </p>
+<blockquote>
+<p>theme: jacman<br>stylus:<br>  compress: true</p>
+</blockquote>
+<h2 id="更新">更新</h2><blockquote>
+<p>cd themes/jacman<br>git pull origin master</p>
+</blockquote>
+<p><em>注:请先备份主题目录下的 _config.yml 文件后再升级</em></p>
+<h2 id="本地查看调试">本地查看调试</h2><blockquote>
+<p>$ hexo g  #生成</p>
+<p>$ hexo s #启动本地服务，进行文章预览调试</p>
+</blockquote>
+<p>浏览器访问<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>，查看搭建效果.此后每次变更_config.yml文件或者上传文件都可以先用此命令调试，非常好用，尤其是当你想调试出自己想要的主题 .</p>
+<h1 id="将独立域名与GitHub_Pages的空间绑定">将独立域名与GitHub Pages的空间绑定</h1><h2 id="GitHub_Pages的设置">GitHub Pages的设置</h2><p>方法一：在Repository的根目录下面，新建一个名为CNAME的文本文件，里面写入你要绑定的域名，比如 rulegod.me .</p>
+<p>方法二：在本地文件Hexo\source目录下新建 CNAME 文件，用编辑器打开此文件, 填写你要访问的域名,然后用hexo命令提交便可 .</p>
+<p>示例:<br><img src="https://dn-rulegod.qbox.me/yuming.png" alt="CNAME"></p>
+<p>提交命令如下:</p>
+<blockquote>
+<p>$ hexo d -g</p>
+</blockquote>
+<h2 id="域名绑定">域名绑定</h2><p>登录<a href="https://www.godaddy.com/" target="_blank" rel="external">Godaddy</a>,点击 My Account —&gt; 用户名</p>
+<p><img src="https://dn-rulegod.qbox.me/godaddy-3.png" alt="godaddy"></p>
+<p>点击 DOMAINS , 选择要绑定的域名, 然后点击 Mange </p>
+<p><img src="https://dn-rulegod.qbox.me/godaddy-01.png" alt="godaddy-01"></p>
+<p>选择 DNS ZONE FILE 点击 Add Record 添加 A记录 </p>
+<p><img src="https://dn-rulegod.qbox.me/godaddy-03.png" alt=""></p>
+<p>其中A的两条记录指向的ip地址是github Pages的提供的ip</p>
+<ul>
+<li>192.30.252.153</li>
+<li>192.30.252.154</li>
+</ul>
+<p><strong>注意:博客不能登录，有可能是github更改了空间服务的ip地址，记得及时到在<a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/" target="_blank" rel="external">GitHub Pages</a>查看最新的ip即可</strong></p>
+<p>示例:</p>
+<p><img src="https://dn-rulegod.qbox.me/godaddy-04.png" alt=""></p>
+<p>www记录 和 A记录 操作相似 效果如下</p>
+<p>示例: </p>
+<p><img src="https://dn-rulegod.qbox.me/godaddy-06.png" alt="godaddy-06"></p>
+<p><strong>记录添加之后必须点击 Save Changes , 否则记录添加不成功</strong></p>
+<h1 id="结语">结语</h1><p>仅记录 Github 上搭建 Hexo 的全过程, 不免有纰漏,请大家多多体谅 !!!<br>感谢博客搭建过程中无偿帮助过我的人(双手合一) !!!<br>希望本文对你搭建个人博客有所帮助 !!!<br>也希望自己能写出好文章 !!!</p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Blog/" rel="tag">#Blog</a>
+          
+            <a href="/tags/GitHub-Pages/" rel="tag">#GitHub Pages</a>
+          
+            <a href="/tags/Next/" rel="tag">#Next</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/09/09/chat-for-mood/" rel="prev">渴望</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+ </div>
+
+        
+            <!-- 多说热评文章-->
+            <p>热评文章</p>
+            <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+        
+
+        
+          <div class="comments" id="comments">
+            
+              <div class="ds-thread" data-thread-key="2015/08/17/Github-Pages-for-Hexo-Set-up-steps/"
+                   data-title="GitHub Pages和Hexo搭建无限流量之静态独立Blog" data-url="http://yoursite.com/2015/08/17/Github-Pages-for-Hexo-Set-up-steps/">
+              </div>
+            
+          </div>
+        
+      </div>
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/uploads/avatar.jpg" alt="Tyrone" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Tyrone</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">念念不忘 必有回响</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="menu-item-icon icon-next-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/RuleGod" target="_blank">github</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com" target="_blank">twitter</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/5579575158/home?topnav=1&wvr=6" target="_blank">weibo</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com" target="_blank">zhihu</a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">Links</p>
+            
+              <span class="links-of-author-item">
+              <a href="https://github.com/RuleGod" target="_blank">RuleGod</a>
+              </span>
+            
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么选择Github_Pages搭建独立博客呢_???"><span class="nav-number">1.1.</span> <span class="nav-text">为什么选择Github Pages搭建独立博客呢 ???</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.2.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何打开Git???"><span class="nav-number">1.3.</span> <span class="nav-text">如何打开Git???</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册GitHub"><span class="nav-number">1.4.</span> <span class="nav-text">注册GitHub</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么要配置SSH_Keys_???"><span class="nav-number">2.</span> <span class="nav-text">为什么要配置SSH Keys ???</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#检查SSH_keys的设置"><span class="nav-number">2.1.</span> <span class="nav-text">检查SSH keys的设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加SSH_Key到GitHub"><span class="nav-number">2.2.</span> <span class="nav-text">添加SSH Key到GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试"><span class="nav-number">2.3.</span> <span class="nav-text">测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置用户信息"><span class="nav-number">2.4.</span> <span class="nav-text">设置用户信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSH_Key配置成功"><span class="nav-number">2.5.</span> <span class="nav-text">SSH Key配置成功</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#利用GitHub_Pages搭建博客"><span class="nav-number">3.</span> <span class="nav-text">利用GitHub Pages搭建博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#github上建立仓库"><span class="nav-number">3.1.</span> <span class="nav-text">github上建立仓库</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用Hexo克隆主题"><span class="nav-number">4.</span> <span class="nav-text">用Hexo克隆主题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo介绍"><span class="nav-number">4.1.</span> <span class="nav-text">Hexo介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Hexo"><span class="nav-number">4.2.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署Hexo"><span class="nav-number">4.3.</span> <span class="nav-text">部署Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署到Github前准备工作"><span class="nav-number">4.4.</span> <span class="nav-text">部署到Github前准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装git插件_hexo-deployer-git"><span class="nav-number">4.5.</span> <span class="nav-text">安装git插件 hexo-deployer-git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始部署"><span class="nav-number">4.6.</span> <span class="nav-text">开始部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复制jacman主题"><span class="nav-number">4.7.</span> <span class="nav-text">复制jacman主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启用主题"><span class="nav-number">4.8.</span> <span class="nav-text">启用主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更新"><span class="nav-number">4.9.</span> <span class="nav-text">更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地查看调试"><span class="nav-number">4.10.</span> <span class="nav-text">本地查看调试</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#将独立域名与GitHub_Pages的空间绑定"><span class="nav-number">5.</span> <span class="nav-text">将独立域名与GitHub Pages的空间绑定</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub_Pages的设置"><span class="nav-number">5.1.</span> <span class="nav-text">GitHub Pages的设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#域名绑定"><span class="nav-number">5.2.</span> <span class="nav-text">域名绑定</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结语"><span class="nav-number">6.</span> <span class="nav-text">结语</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner"> <div class="copyright" >
+  
+  &copy; &nbsp; 
+  <span itemprop="copyrightYear">2015</span>
+  <span class="with-love">
+    <i class="icon-next-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tyrone</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+ </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"rulegod456"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+  	<script src="/js/ua-parser.min.js"></script>
+  	<script src="/js/hook-duoshuo.js"></script>
+  
+
+    
+  
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.1" id="motion.global"></script>
+
+
+
+  <script type="text/javascript" src="/js/nav-toggle.js"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.1" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 0.4 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    var $tocContent = $('.post-toc-content');
+    if (isDesktop() && CONFIG.sidebar === 'post') {
+      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+        displaySidebar();
+      }
+    }
+  });
+</script>
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+    });
+  </script>
+
+  
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/lazyload.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#posts").find('img').lazyload({
+        placeholder: "/images/loading.gif",
+        effect: "fadeIn"
+      });
+    });
+  </script>
+</body>
+</html>
